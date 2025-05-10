@@ -1,0 +1,113 @@
+html {
+  scroll-behavior: smooth;
+  /* Smooth scrolling */
+}
+
+@font-face {
+  font-family: "Khmer OS Siemreap";
+  src: url("../fonts/KhmerOSSiemreap.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: "Khmer OS Siemreap", sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Sticky header */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.header-left span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Sections */
+section {
+  padding: 50px;
+  background: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  scroll-margin-top: 90px;
+}
+
+/* RESPONSIVE */
+/* Tablet and below */
+@media (max-width: 768px) {
+  /* Sections smaller padding */
+  section {
+    padding: 30px 20px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .header-left span {
+    font-size: 0.9rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+}
+
+label {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="number"] {
+  padding: 12px;
+  font-size: 1.1em;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+  border-color: #00539f;
+  outline: none;
+}
+
+.result {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 15px 0;
+  word-wrap: break-word;
+}
